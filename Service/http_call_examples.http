@@ -1,0 +1,91 @@
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Hello, who are you?",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "",
+    "history": "[]"
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "What can you do?",
+    "history": "[]",
+}
+
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "I really interest in Chinese art, please give me a tour",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "",
+    "history": "[]",
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "What are the three most popular painting in this museum",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "",
+    "history": "[]"
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Take me to visit them",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "",
+    "history": "[]"
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Please introduce this painting to me",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "painting 013",
+    "history": []
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Is there any other painting of the same style in this museum.",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "painting 013",
+    "history": "[]"
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Next",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "",
+    "history": "['painting 000','painting 001']"
+}
+
+POST http://127.0.0.1:5000/chatgpt/question?debug=true HTTP/1.1
+content-type: application/json
+
+{
+    "question" : "Summarize this tour and give me more suggestions",
+    "position" : "(0.0,0.0,0.0)",
+    "landmark" : "painting 013",
+    "history": "['painting 015', 'painting 013']"
+}
+
+
+Get http://127.0.0.1:5000/chatgpt/status HTTP/1.1

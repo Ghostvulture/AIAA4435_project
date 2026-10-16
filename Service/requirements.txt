@@ -1,0 +1,5 @@
+# Runtime dependencies of chatgpt_service.py (legacy OpenAI SDK API).
+Flask==3.1.2
+openai==0.28.1
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.27.1
